@@ -1,0 +1,17 @@
+ B1: đầu tiên ta vào folder cần tạo project chạy terminal với lệnh:
+django-admin startproject <Tên Project>
+
+B2: vào visual code mở terminal chạy câu lệnh này để chạy web:
+python manage.py runserver
+
+	Nếu bạn bị xung đột cổng hay muốn đổi cổng. Có thể sử dụng lệnh sau để chạy trang web trên cổng khác:
+
+		python manage.py runserver <Tên Cổng>
+
+B3: tạo ra một app chứa các app phụ (app phụ là nơi chứa các chương trình của mình)
+	python manage.py startapp <Tên APP>
+	mở file settings.py. Ở phần khai báo INSTALLED_APPS, tao ghi thêm tên App vào trong
+
+	Để cập nhật cho phần settings. Ta sẽ chạy lệnh sau:
+	python manage.py migrate
+
